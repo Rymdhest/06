@@ -1,0 +1,29 @@
+Description:
+This application is a JavaScript translation of a Python TensorFlow tutorial created by Morvan Zhou.
+It implements a Generative Adversarial Network (GAN) to generate "artistic paintings" based on random input.
+A real painting is defined as a smooth curve that is inside the lower and upper bounds.
+After some training a generated painting should look close to a smooth curve inside the bounds.
+The application will automatically start training the GAN.
+You will see one example of generated artwork displayed in real-time, along with the discriminator's score and accuracy.
+
+Original Python Code:
+For reference, the original Python code can be found at:
+https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/406_GAN.py
+
+Installation:
+1. Open the 'index.html' file in your web browser.
+
+Files:
+- index.html: The main HTML file to run the application. It contains a canvas for displaying generated art and text fields for showing the discriminator's score and accuracy.
+- tensorflow.js: The JavaScript file containing the GAN implementation.
+
+Parameters to change in the javascript file:
+- EPOCHS: Number of epochs for training (default: 5000)
+- BATCH_SIZE: Size of batches used for training (default: 64)
+- LR_G: Learning rate for the generator (default: 0.0001)
+- LR_D: Learning rate for the discriminator (default: 0.0001)
+- N_IDEAS: Number of random input ideas for generating art (default: 5)
+- ART_COMPONENTS: Number of points the generator can draw (default: 15)
+
+Author:
+Gustav Holmström
